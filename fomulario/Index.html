@@ -1,0 +1,78 @@
+ <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Danilo Silva</title>
+    <link rel="stylesheet" type="text/css" href="css/estilo.css" />
+</head>
+
+<body>
+<section id= "container">
+ <p>
+    <h1>Formulário de Cadastro</h1>
+    <form action='servidor.php' method = 'POST' id="fomulário">
+     <strong>Nome completo</strong> <input type="text" name='nome' id ="nome" placeholder="Informe o nome completo" maxlength="30" required ="true">
+    </p>
+ <p>
+        <strong>E-mail:</strong> <input type="email" name="e-mail" id="e-mail" placeholder="Informe um e-mail válido" maxlength="20" required ="true">
+    </p> 
+ <p>
+        <strong> Sexo:</strong> <input type="radio" name="sexo" value="m"> Masculino <input type="radio" name="sexo" value="f" checked> Feminino
+   </p>
+ <p>
+        <strong> Data de Nascimento:</strong> <input type="date" name="dataaniversario" placeholder="DD/MM/AA">
+  </p>
+
+ <p>
+        <strong>  Grau de Escolaridade:</strong> <select name ='GraudeEscolaridade' size='1'>
+        <option value='EnsinoMédio'>Ensino Médio</option>
+        <option value='SuperiorCompleto' selected ='true'>Superior Completo</option>
+        <option value='PosGraduação'>Pós Graduação</option>
+        <option value='Mestrado'>Mestrado</option>
+        <option value='Doutorado'>Doutorado</option>
+    </select>
+ </p>
+<p>
+        <strong>  Estilos musicais preferidos: </strong><select name = 'EstiloMusical'  size = '5' multiple>
+        <option value='Rock'>Rock</option>
+        <option value='Funk'>Funk</option>
+        <option value='Samba'>Samba</option>
+        <option value='Pagode'>Pagode</option>
+        <option value='Pop'>Pop</option>
+    </select>
+ </p>
+
+ <p>
+        <strong>  Nome de usuário:</strong><input type="text" name="NomdedeUsuario">
+  </p>
+<p>
+        <strong>  Senha:</strong> <input type="password" name = "senha">
+  </p>
+<P>
+        <strong> Cor preferida</strong> <input type="color">
+ </P>
+<p>
+        <strong>  Quantidade de filhos:</strong> <input type="number" max="5" id ="QuantidadeFilhos" >
+ </p>
+
+ <p>
+        <strong>  Quantidade de Veiculos:</strong> 0 <input type="range"  >5
+    </p>
+<P>
+        <strong>  Comentários sobre o site:</strong><textarea cols="80" rows="10" name="opinião" > </textarea>
+   </P>
+<p>
+    <input type="checkbox" checked> Desejo receber ofertas via e-mail
+</p>
+
+<p>
+  <input type="submit" name="enviar" value="Enviar"> <input type="reset" name="Apagar" value="Limpar Campos">
+</p>
+
+</form>
+
+    </section>
+</body>
+
+
+</html>

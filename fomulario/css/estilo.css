@@ -1,0 +1,17 @@
+#QuantidadeFilhos{
+
+    width: 30px;
+}
+
+#container{
+    width: 970px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form, h1{
+    
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto
+}
